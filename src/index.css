@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased min-h-screen;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-amber-600 text-white hover:bg-amber-700;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
